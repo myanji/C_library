@@ -1,5 +1,5 @@
 #include "stdafx.h"
-int Bookcount[100] = { 0, };
+int Bookcount[100] = {0, };
 int i = 0;
 
 void ShowList() {
