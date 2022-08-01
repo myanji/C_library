@@ -34,6 +34,7 @@ void Setcheck_out(char* borrowed) {
 			{
 				printf("대출이 완료되었습니다.");
 				Bookcount[j]--;
+				break;
 
 			}
 
@@ -41,6 +42,10 @@ void Setcheck_out(char* borrowed) {
 			{
 				printf("대출이 불가능합니다.\n");
 			}
+		}
+		else if (j == i && strcmp(Bookname[j], borrowed))
+		{
+			printf("책이 존재하지 않습니다.");
 		}
 
 	}
